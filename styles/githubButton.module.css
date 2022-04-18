@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #6666ff;
+  width: 5rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 25px;
+}
+
+.container:active {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+}
