@@ -1,12 +1,16 @@
-import styles from '../styles/githubButton.module.css';
+import styles from '../styles/button.module.css';
 import { AiFillGithub } from 'react-icons/ai';
 
-function GithubButton() {
+interface Props {
+  link: string;
+}
+
+function GithubButton({ link }: Props) {
   return (
-    <div className={styles.container}>
+    <a href={link} className={styles.container}>
       <AiFillGithub color="white" />
-      <div className={styles.text}>Github</div>
-    </div>
+      <div className={styles.text}>GitHub</div>
+    </a>
   );
 }
 

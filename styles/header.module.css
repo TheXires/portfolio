@@ -22,3 +22,7 @@
   color: #ffffff;
   font-size: 34px;
 }
+
+.buttonContainer {
+  display: flex;
+}

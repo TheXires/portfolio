@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/header.module.css';
 import GithubButton from './GithubButton';
 import Link from 'next/link';
+import MailtoButton from './MailtoButton';
 
 function Header() {
   return (
@@ -11,10 +12,9 @@ function Header() {
         <div className={styles.text}>
           mein Name ist Robin und ich bin Web und Mobile Entwickler.
         </div>
-        <div>
-          <a href="https://github.com/TheXires">
-            <GithubButton />
-          </a>
+        <div className={styles.buttonContainer}>
+          <GithubButton link="https://github.com/TheXires" />
+          <MailtoButton />
         </div>
       </div>
     </section>

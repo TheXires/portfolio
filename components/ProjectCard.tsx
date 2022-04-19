@@ -1,32 +1,37 @@
-import React from 'react';
 import Image from 'next/image';
-import image from '../public/background.jpg';
+import Link from 'next/link';
+import React from 'react';
 import styles from '../styles/projectCard.module.css';
+import { Project } from '../types/project';
+import GithubButton from './GithubButton';
 
 interface Props {
+  project: Project;
   reverse?: boolean;
 }
 
-function ProjectCard({ reverse = false }: Props) {
+function ProjectCard({ project, reverse = false }: Props) {
   return (
     <div className={styles.container} style={{ flexDirection: reverse ? 'row-reverse' : 'row' }}>
-      <div style={reverse ? { marginLeft: '1rem' } : { marginRight: '1rem' }}>
-        <Image src={image} alt="Projekt Bild" height={300} width={450} />
+      <div className={styles.image}>
+        <Image
+          src={project.thumbnail}
+          alt="Projekt Bild"
+          height={400}
+          width={500}
+          objectFit="cover"
+        />
       </div>
-      <div>
-        <div className={styles.title}>Wetter App</div>
+      <div className={styles.right}>
+        <Link href={`/projects/${project.id}`}>
+          <a className={styles.title}>{project.title}</a>
+        </Link>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in ipsam vel fuga quod
           excepturi placeat error voluptatem quos aliquid? Aspernatur commodi nostrum eos nam quia
           iusto necessitatibus reprehenderit ullam?
         </div>
-        <div>
-          <ul>
-            <li>React Native</li>
-            <li>Cloudflare Workers</li>
-            <li>Open Weather Api</li>
-          </ul>
-        </div>
+        <GithubButton link={project.github} />
       </div>
     </div>
   );

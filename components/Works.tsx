@@ -1,17 +1,22 @@
 import React from 'react';
 import styles from '../styles/works.module.css';
+import { Project } from '../types/project';
 import { Layout } from './Layout';
 import ProjectCard from './ProjectCard';
 
-function Works() {
+interface Props {
+  projects: Project[];
+}
+
+function Works({ projects }: Props) {
   return (
     <section className={styles.container}>
       <Layout>
-        <h1>Arbeiten</h1>
+        <div className={styles.heading}>Arbeiten</div>
 
         <div className={styles.projectContainer}>
-          {Array.from({ length: 5 }).map((item, index) => {
-            return <ProjectCard reverse={index % 2 === 1} />;
+          {projects.map((project, index) => {
+            return <ProjectCard project={project} reverse={index % 2 === 1} key={project.id} />;
           })}
         </div>
       </Layout>

@@ -1,5 +1,5 @@
 .container {
-  padding: 1rem 3rem;
+  padding: 0rem 1rem;
 }
 
 .projectContainer {
@@ -7,6 +7,12 @@
   /* display: grid;
   grid-template-columns: 1fr; */
   /* gap: 20px; */
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 /* @media screen and (min-width: 600px) {

@@ -1,12 +1,15 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect } from 'react';
 import Header from '../components/Header';
-import { Layout } from '../components/Layout';
-import Navbar from '../components/Navbar';
 import Works from '../components/Works';
+import { getProjectData, getSortedProjectsData } from '../lib/projects';
+import { Project } from '../types/project';
 
-export default function Home() {
+interface Props {
+  allProjectsData: Project[];
+}
+
+export default function Home({ allProjectsData }: Props) {
   return (
     <div>
       <Head>
@@ -15,9 +18,18 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Works />
+      <Works projects={allProjectsData} />
 
       <div style={{ height: 500 }} />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const allProjectsData = getSortedProjectsData();
+  return {
+    props: {
+      allProjectsData,
+    },
+  };
 }
