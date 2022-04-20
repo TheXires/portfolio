@@ -1,7 +1,7 @@
 ---
 title: Wetter App
 github: https://github.com/TheXires/weather
-thumbnail: /../public/weatherapp.jpg
+thumbnail: /images/weatherapp.jpg
 short: Minimalistische Wetter App mit modernem Design und 3D Icons, basierend auf einem Prototyp von Behanced entwickelt.
 ---
 

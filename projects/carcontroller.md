@@ -1,7 +1,7 @@
 ---
 title: Car Controller
 github: https://github.com/TheXires/carController
-thumbnail: /../public/carcontroller.jpg
+thumbnail: /images/carcontroller.jpg
 short: Anwendung zum Eingreifen in den Fahrprozess eines im Simulator autonomen fahrenden Autos im Rahmen einer Projektarbeit.
 ---
 

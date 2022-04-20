@@ -1,7 +1,7 @@
 ---
 title: Kalorienzähler
 github: https://github.com/TheXires/eas-calorie-counter
-thumbnail: /../public/caloriecounter.jpg
+thumbnail: /images/caloriecounter.jpg
 short: App zur Protokollierung von Kalorientumsätzen, welche als Teil meiner Bacherlorarbeit erstellt wurde.
 ---
 
