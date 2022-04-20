@@ -19,8 +19,6 @@ export default function Home({ allProjectsData }: Props) {
 
       <Header />
       <Works projects={allProjectsData} />
-
-      <div style={{ height: 500 }} />
     </div>
   );
 }
