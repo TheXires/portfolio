@@ -10,17 +10,21 @@ interface Props {
 
 function Works({ projects }: Props) {
   return (
-    <section className={styles.container}>
-      <Layout>
-        <div className={styles.heading}>Arbeiten</div>
+    <Layout>
+      <section className={styles.container}>
+        <div className={styles.heading}>Projekte</div>
 
         <div className={styles.projectContainer}>
           {projects.map((project, index) => {
-            return <ProjectCard project={project} reverse={index % 2 === 1} key={project.id} />;
+            return (
+              <div style={{ width: '100%' }}>
+                <ProjectCard project={project} reverse={index % 2 === 1} key={project.id} />
+              </div>
+            );
           })}
         </div>
-      </Layout>
-    </section>
+      </section>
+    </Layout>
   );
 }
 

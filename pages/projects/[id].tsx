@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Project } from '../../types/project';
-import { getAllProjectIds, getProjectData } from '../../lib/projects';
+import { getAllProjectIds, getProjectData } from '../../util/projects';
 import Link from 'next/link';
 
 interface Props {
@@ -15,7 +15,9 @@ export default function Post({ projectData }: Props) {
       </Head>
       <h1>{projectData.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}></div>
-      <Link href="/">{'<- Back'}</Link>
+      <Link href="/" scroll={false}>
+        {'<- Back'}
+      </Link>
     </div>
   );
 }

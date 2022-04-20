@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useEffect } from 'react';
 import Header from '../components/Header';
 import Works from '../components/Works';
-import { getProjectData, getSortedProjectsData } from '../lib/projects';
+import { getProjectData, getSortedProjectsData } from '../util/projects';
 import { Project } from '../types/project';
 
 interface Props {

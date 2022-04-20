@@ -3,5 +3,6 @@ export interface Project {
   title: string;
   github: string;
   thumbnail: string;
+  short: string;
   contentHtml?: any;
 }

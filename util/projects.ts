@@ -27,13 +27,14 @@ export function getSortedProjectsData() {
       title: matterResult.data.title,
       github: matterResult.data.github,
       thumbnail: matterResult.data.thumbnail,
+      short: matterResult.data.short,
     };
   });
   // Sort posts by date
   return allProjectsData.sort(({ id: a }, { id: b }) => {
-    if (a < b) {
+    if (a > b) {
       return 1;
-    } else if (a > b) {
+    } else if (a < b) {
       return -1;
     } else {
       return 0;

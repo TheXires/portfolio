@@ -12,8 +12,8 @@ interface Props {
 
 function ProjectCard({ project, reverse = false }: Props) {
   return (
-    <div className={styles.container} style={{ flexDirection: reverse ? 'row-reverse' : 'row' }}>
-      <div className={styles.image}>
+    <div className={styles.container}>
+      <div className={styles.imageContainer}>
         <Image
           src={project.thumbnail}
           alt="Projekt Bild"
@@ -22,16 +22,19 @@ function ProjectCard({ project, reverse = false }: Props) {
           objectFit="cover"
         />
       </div>
-      <div className={styles.right}>
+      <div className={styles.bottomContainer}>
         <Link href={`/projects/${project.id}`}>
           <a className={styles.title}>{project.title}</a>
         </Link>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium in ipsam vel fuga quod
-          excepturi placeat error voluptatem quos aliquid? Aspernatur commodi nostrum eos nam quia
-          iusto necessitatibus reprehenderit ullam?
+        <div className={styles.text}>
+          {project.short}{' '}
+          <Link href={`/projects/${project.id}`}>
+            <a>Mehr...</a>
+          </Link>
         </div>
-        <GithubButton link={project.github} />
+        <div style={{}}>
+          <GithubButton link={project.github} />
+        </div>
       </div>
     </div>
   );
