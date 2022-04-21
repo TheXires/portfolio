@@ -15,7 +15,7 @@ export default function Post({ projectData }: Props) {
       </Head>
       <h1>{projectData.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }}></div>
-      <Link href="/" scroll={false}>
+      <Link href="/#projects" scroll={false}>
         {'<- Back'}
       </Link>
     </div>

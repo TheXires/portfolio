@@ -7,22 +7,23 @@ import GithubButton from './GithubButton';
 
 interface Props {
   project: Project;
-  reverse?: boolean;
 }
 
-function ProjectCard({ project, reverse = false }: Props) {
+function ProjectCard({ project }: Props) {
   return (
     <div className={styles.container}>
       <div>
-        <div className={styles.imageContainer}>
-          <Image
-            src={project.thumbnail}
-            alt="Projekt Bild"
-            height={400}
-            width={500}
-            objectFit="cover"
-          />
-        </div>
+        <Link href={`/projects/${project.id}`}>
+          <div className={styles.imageContainer}>
+            <Image
+              src={project.thumbnail}
+              alt="Projekt Bild"
+              height={400}
+              width={500}
+              objectFit="cover"
+            />
+          </div>
+        </Link>
         <div className={styles.descriptionContainer}>
           <Link href={`/projects/${project.id}`}>
             <a className={styles.title}>{project.title}</a>
