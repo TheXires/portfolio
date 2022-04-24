@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import styles from '../styles/works.module.css';
-import { Project } from '../types/project';
-import { Layout } from './Layout';
-import ProjectCard from './ProjectCard';
 import { motion } from 'framer-motion';
+import React from 'react';
+import styles from '../../styles/works.module.css';
+import { Project } from '../../types/project';
+import { Layout } from '../general/Layout';
+import ProjectCard from './ProjectCard';
 
 interface Props {
   projects: Project[];

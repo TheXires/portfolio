@@ -28,6 +28,8 @@ export function getSortedProjectsData() {
       github: matterResult.data.github,
       thumbnail: matterResult.data.thumbnail,
       short: matterResult.data.short,
+      headerImage: matterResult.data.headerImage,
+      technologies: matterResult.data.technologies,
     };
   });
   // Sort posts by date

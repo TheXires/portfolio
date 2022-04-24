@@ -3,6 +3,8 @@ title: Wetter App
 github: https://github.com/TheXires/weather
 thumbnail: /images/weatherapp.jpg
 short: Minimalistische Wetter App mit modernem Design und 3D Icons, basierend auf einem Prototyp von Behanced entwickelt.
+headerImage: /images/weatherapp.jpg
+technologies: ['typescript', 'reactNative', 'cloudflare', 'expo']
 ---
 
 Minimalistische Wetter App mit modernem Design und 3D Icons, basierend auf einem Prototyp von Behanced entwickelt.
@@ -15,3 +17,13 @@ after a design published on Behance which unfortunatly is not availible anymore.
 ## Feedback
 
 If you have any feedback, please reach out to us at fake@fake.com
+
+<Image
+  src="/images/weatherapp.jpg"
+  alt="Projekt Bild"
+  height={400}
+  width={500}
+  objectFit="cover"
+/>
+
+Test

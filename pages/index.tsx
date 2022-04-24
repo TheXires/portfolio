@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Works from '../components/Works';
+import About from '../components/index/About';
+import Header from '../components/index/Header';
+import Works from '../components/index/Works';
 import { Project } from '../types/project';
 import { getSortedProjectsData } from '../util/projects';
 
@@ -21,7 +22,10 @@ export default function Home({ allProjectsData }: Props) {
       <a id="projects" />
       <Works projects={allProjectsData} />
 
-      <div
+      <a id="about" />
+      <About />
+
+      {/* <div
         style={{
           backgroundColor: '#23292F',
           height: '100vh',
@@ -33,7 +37,7 @@ export default function Home({ allProjectsData }: Props) {
         }}
       >
         Coming soon
-      </div>
+      </div> */}
     </div>
   );
 }

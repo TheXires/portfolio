@@ -1,6 +1,5 @@
-import styles from '../styles/button.module.css';
-import { AiFillGithub } from 'react-icons/ai';
 import { HiMail } from 'react-icons/hi';
+import styles from '../../styles/button.module.css';
 
 function MailtoButton() {
   return (

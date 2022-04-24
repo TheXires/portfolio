@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import styles from '../styles/header.module.css';
-import GithubButton from './GithubButton';
-import MailtoButton from './MailtoButton';
+import styles from '../../styles/header.module.css';
+import GithubButton from '../general/GithubButton';
+import MailtoButton from '../general/MailtoButton';
 
 function Header() {
   return (
