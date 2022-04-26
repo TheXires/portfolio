@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-top: 0.1rem;
 }
 
 .heading {
