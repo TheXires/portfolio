@@ -3,10 +3,15 @@ import { IconName } from '../components/general/TechnologyIcon';
 export interface Project {
   id: string;
   title: string;
-  github: string;
-  thumbnail: string;
-  short: string;
-  headerImage: string;
   technologies: IconName[];
-  contentHtml?: any;
+  short: string;
+  thumbnail: string;
+  github: string;
+  headerImage: string;
+  description: string;
+  wireframes: string;
+  wireframeImage: string;
+  frontend: string;
+  frontendImages: string[];
+  backend: string;
 }

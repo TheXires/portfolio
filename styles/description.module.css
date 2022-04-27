@@ -1,0 +1,10 @@
+.container {
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 834px) {
+  .container {
+    margin-bottom: 1rem;
+  }
+}

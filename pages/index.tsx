@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Footer from '../components/general/Footer';
 import About from '../components/index/About';
 import Header from '../components/index/Header';
 import Works from '../components/index/Works';
@@ -25,19 +26,7 @@ export default function Home({ allProjectsData }: Props) {
       <a id="about" />
       <About />
 
-      {/* <div
-        style={{
-          backgroundColor: '#23292F',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: '1.8rem',
-          color: 'white',
-        }}
-      >
-        Coming soon
-      </div> */}
+      <Footer />
     </div>
   );
 }

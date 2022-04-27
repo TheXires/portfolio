@@ -25,11 +25,17 @@ export function getSortedProjectsData() {
     return {
       id,
       title: matterResult.data.title,
-      github: matterResult.data.github,
-      thumbnail: matterResult.data.thumbnail,
-      short: matterResult.data.short,
-      headerImage: matterResult.data.headerImage,
       technologies: matterResult.data.technologies,
+      short: matterResult.data.short,
+      thumbnail: matterResult.data.thumbnail,
+      github: matterResult.data.github,
+      headerImage: matterResult.data.headerImage,
+      description: matterResult.data.description,
+      wireframes: matterResult.data.wireframes,
+      wireframeImage: matterResult.data.wireframeImage,
+      frontend: matterResult.data.frontend,
+      frontendImages: matterResult.data.frontendImages,
+      backend: matterResult.data.backend,
     };
   });
   // Sort posts by date
@@ -63,14 +69,9 @@ export async function getProjectData(id) {
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
 
-  // Use remark to convert markdown into HTML string
-  const processedContent = await remark().use(html).process(matterResult.content);
-  const contentHtml = processedContent.toString();
-
   // Combine the data with the id and contentHtml
   return {
     id,
-    contentHtml,
     ...matterResult.data,
   };
 }

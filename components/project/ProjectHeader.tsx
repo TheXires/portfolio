@@ -3,13 +3,12 @@ import styles from '../../styles/projectHeader.module.css';
 import TechnologyIcon, { IconName } from '../general/TechnologyIcon';
 
 interface Props {
-  description: string;
   heading: string;
   icons: IconName[];
   imgUrl: string;
 }
 
-function ProjectHeader({ imgUrl, description, heading, icons }: Props) {
+function ProjectHeader({ imgUrl, heading, icons }: Props) {
   return (
     <section className={styles.container}>
       <div className={styles.image} style={{ backgroundImage: `url(${imgUrl})` }} />
