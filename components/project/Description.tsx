@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/description.module.css';
+import styles from '../../styles/project/description.module.css';
 
 interface Props {
   description: string;

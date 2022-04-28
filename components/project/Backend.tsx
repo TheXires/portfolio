@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/backend.module.css';
+import styles from '../../styles/project/backend.module.css';
 
 interface Props {
   description: string;

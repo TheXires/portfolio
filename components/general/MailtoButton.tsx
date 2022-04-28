@@ -1,5 +1,5 @@
 import { HiMail } from 'react-icons/hi';
-import styles from '../../styles/button.module.css';
+import styles from '../../styles/general/button.module.css';
 
 function MailtoButton() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/projectHeader.module.css';
+import styles from '../../styles/project/projectHeader.module.css';
 import TechnologyIcon, { IconName } from '../general/TechnologyIcon';
 
 interface Props {

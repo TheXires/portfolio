@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import styles from '../../styles/projectCard.module.css';
+import styles from '../../styles/index/projectCard.module.css';
 import { Project } from '../../types/project';
 import GithubButton from '../general/GithubButton';
 

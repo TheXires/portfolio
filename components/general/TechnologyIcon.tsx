@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/technologyIcon.module.css';
+import styles from '../../styles/general/technologyIcon.module.css';
 
 const icon = {
   cloudflare: '/icons/cloudflare.png',
