@@ -39,11 +39,14 @@
 }
 
 .rightContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   color: white;
   border-left: 1px solid #6666ff;
   margin-left: 2rem;
   padding-left: 2rem;
-  width: 10rem;
+  width: 15rem;
 }
 
 .rightContainer span {
@@ -70,8 +73,16 @@
   }
 
   .rightContainer {
+    flex-direction: row;
+    width: 100%;
     border-left: none;
     margin-left: 0;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .rightContainer {
+    flex-direction: column;
   }
 }
