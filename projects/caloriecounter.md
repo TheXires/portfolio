@@ -9,11 +9,21 @@ description: Der Kalorienzähler erlaubt es den Nutzern, ihre Kalorienzufuhr zu 
 wireframes: Während der Entwicklung dieser App wurden die Schritte des Software Development Life Cycles nacheinander durchlaufen. Dazu gehört auch das Erstellen von Wireframes und/oder eines Prototyps. Da dies ein effizienteres Erstellen und Ausprobieren unterschiedlicher Designs erlaubt und so den Entwicklungsprozess vereinfacht und optimiert.
 wireframeImage: /images/wireframes_caloriecounter.jpg
 frontend: Im Frontend setzt der Kalorienzähler auf React Native, um eine native und plattformübergreifende Anwendung zu ermöglichen. Neben einem modernen und zeitlosen Design bietet die App einen dunklen und einen hellen Modus, welcher je nach Geräteeinstellungen automatisch verwendet wird. Darüber hinaus wird neben Deutsch auch die englische Sprache unterstützt. Aufgrund der Verwendung von i18n können in Zukunft auch weitere Sprachen einfach hinzugefügt werden. Um die App auch ohne Mac auf einem iPhone testen zu können, wurde Expo verwendet. Da neben den in Expo implementierten Feature weitere native Funktionen benötigt werden, wurde mithilfe der Expo Application Services (EAS) ein eigener Dev Client erstellt.
-frontendImages: [
-  'typescript',
-  'reactNative',
-  'firebase',
-  'expo'
-]
+frontendImages:
+  [
+    '/images/projects/caloriecounter/image1.jpg',
+    '/images/projects/caloriecounter/image2.jpg',
+    '/images/projects/caloriecounter/image3.jpg',
+    '/images/projects/caloriecounter/image4.jpg',
+    '/images/projects/caloriecounter/image5.jpg',
+    '/images/projects/caloriecounter/image6.jpg',
+    '/images/projects/caloriecounter/image7.jpg',
+    '/images/projects/caloriecounter/image8.jpg',
+    '/images/projects/caloriecounter/image9.jpg',
+    '/images/projects/caloriecounter/image10.jpg',
+    '/images/projects/caloriecounter/image11.jpg',
+    '/images/projects/caloriecounter/image12.jpg',
+    '/images/projects/caloriecounter/image13.jpg',
+  ]
 backend: Für das Backend wurde auf eine serverless Lösung von Google in Form von Firebase gesetzt. Konkret wurden dabei vier konkrete Firebase Dienste verwendet. Authentication für die Nutzer- und Rechteverwaltung, sodass Nutzer sich registrieren und einloggen können und sichergestellt wird, dass jeder Nutzer nur Zugriff auf die eigenen Daten hat. Für das strukturierte Speichern von Informationen und Daten wurde auf die dokumentenbasierte Datenbank Cloud Firebase gesetzt. Um das Hochladen und Anzeigen von Bildern in der App zu ermöglichen, wird der Cloud Storage genutzt. Um darüber hinaus weitere Funktionalitäten zu ermöglichen, wurden einige Cloud Functions hinzugefügt, die beispielsweise das Erstellen der Statistiken und Löschen von Benutzerkonten ermöglichen.
 ---

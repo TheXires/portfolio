@@ -20,7 +20,6 @@ export default function Post({ projectData }: Props) {
         <title>{projectData.title}</title>
       </Head>
       <ProjectHeader
-        description={projectData.short}
         heading={projectData.title}
         icons={projectData.technologies}
         imgUrl={projectData.headerImage}

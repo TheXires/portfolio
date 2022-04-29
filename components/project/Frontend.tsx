@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../../styles/project/frontend.module.css';
+import ImageSlider from './ImageSlider';
 
 interface Props {
   description: string;
@@ -12,8 +13,7 @@ function Frontend({ description, images }: Props) {
       <div className={styles.heading}>Frontend</div>
       <div>
         <div>{description}</div>
-        {/* TODO hier bilder slider einfügen */}
-        <div></div>
+        <ImageSlider images={images} />
       </div>
     </div>
   );
