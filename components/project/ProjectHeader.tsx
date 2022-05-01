@@ -17,7 +17,7 @@ function ProjectHeader({ imgUrl, heading, icons }: Props) {
         <div className={styles.iconContainer}>
           {icons.map((icon) => {
             return (
-              <div className={styles.icon}>
+              <div className={styles.icon} key={icon}>
                 <TechnologyIcon iconName={icon} />
               </div>
             );

@@ -25,6 +25,7 @@ function Works({ projects }: Props) {
           {projects.map((project) => {
             return (
               <motion.div
+                key={project.title}
                 transition={{ duration: 0.2, ease: 'easeInOut' }}
                 whileHover={{ scale: 1.05 }}
               >
