@@ -14,6 +14,21 @@
   position: relative;
 }
 
+.backButton {
+  display: flex;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #23292f99;
+  color: white;
+  cursor: pointer;
+}
+
 .bottom {
   height: max(10vh, 70px);
   display: flex;
