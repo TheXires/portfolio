@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  height: 5rem;
+  background-color: #6666ff;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.innerContainer {
+  display: flex;
+  flex-grow: 100;
+  max-width: 1400px;
+  justify-content: space-between;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
