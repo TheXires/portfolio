@@ -4,7 +4,7 @@ import styles from '../../styles/general/button.module.css';
 function MailtoButton() {
   return (
     <a
-      href="mailto:xires.dev@gmail.com"
+      href="mailto:robin-beckmann@mailbox.org"
       className={styles.container}
       style={{ backgroundColor: 'gray' }}
     >
