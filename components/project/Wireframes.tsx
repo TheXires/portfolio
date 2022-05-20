@@ -12,9 +12,11 @@ function Wireframes({ description, image }: Props) {
     <div className={styles.container}>
       <div className={styles.heading}>Wireframes</div>
       <div className={styles.innerContainer}>
-        <div className={styles.image}>
-          <Image src={image} width={1920} height={1080} objectFit="contain" />
-        </div>
+        {image !== '' && (
+          <div className={styles.image}>
+            <Image src={image} width={1920} height={1080} objectFit="contain" />
+          </div>
+        )}
         <div>{description}</div>
       </div>
     </div>
