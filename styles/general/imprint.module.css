@@ -1,9 +1,4 @@
 .innerContainer {
   margin-bottom: 3rem;
-}
-
-.personalData {
-  direction: rtl;
-  text-align: left;
-  unicode-bidi: bidi-override;
+  padding: 0 1rem;
 }

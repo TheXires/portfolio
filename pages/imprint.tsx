@@ -13,12 +13,12 @@ export default function Imprint() {
         <div className={styles.innerContainer}>
           <h1>Impressum</h1>
           <p>Angaben gemäß § 5 TMG</p>
-          <p className={styles.personalData}>
-            nnamkceB niboR
+          <p>
+            Robin Beckmann
             <br />
-            23 gnilesieB mI
+            Im Beiseling 32
             <br />
-            nessE 70354
+            45307 Essen
             <br />
           </p>
           <p>
