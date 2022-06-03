@@ -43,15 +43,13 @@ function About() {
             <div>
               <span>Technologien</span>
               <ul>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
+                <li>JavaScript und TypeScript</li>
                 <li>React</li>
                 <li>Next.js</li>
                 <li>React Native</li>
                 <li>Expo + EAS</li>
                 <li>Node.js</li>
                 <li>Firebase</li>
-                <li>Cloudflare</li>
               </ul>
             </div>
             <div>
@@ -60,7 +58,9 @@ function About() {
                 <li>VS Code</li>
                 <li>Git</li>
                 <li>Framer</li>
+                <li>Affinity Designer</li>
                 <li>Jira</li>
+                <li>MS Office und Google Docs</li>
               </ul>
             </div>
           </div>
