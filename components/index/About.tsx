@@ -10,6 +10,9 @@ function About() {
         <div className={styles.innerContainer}>
           <div className={styles.leftContainer}>
             <div>
+              <span>Jetzt</span> Arbeiten als IT Professional (Requirements Engineer)
+            </div>
+            <div>
               <span>2022</span> Bachelor of Science
               <div>
                 <span>2021</span> Praxissemester Frontend Entwicklung
